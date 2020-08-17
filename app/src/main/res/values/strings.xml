@@ -1,0 +1,58 @@
+<resources>
+    <dimen name="font_size">16sp</dimen>
+
+    <string name="app_name">FoodOrder</string>
+    <string name="drawer_open">Open navigation drawer</string>
+
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="tema">Тема</string>
+    <string name="font">Шрифт</string>
+
+    <string name="create_order_buttonText">Новый заказ</string>
+    <string name="refreshOrders">Обновить</string>
+    <string name="clearOrders">Очистить список</string>
+
+    <string name="_35">35 см</string>
+    <string name="_25">25 см</string>
+    <string name="_45">45 см</string>
+    <string name="create_order">Оформить заказ</string>
+    <string name="num_of_item">Количество:</string>
+    <string name="about">
+        Мобильное клиентское приложение для заказа еды.\n\n\n\n
+        Разработчик: Иодик Дмитрий\n
+        Группа: ИВБО-02-16\n
+        РТУ МИРЭА\n
+        2020 г.\n\n
+        V 1.0
+    </string>
+    <string-array name="planets_array">
+        <item>Пицца</item>
+        <item>Гамбургер</item>
+    </string-array>
+
+    <string-array name="num">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string-array name="themes">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="fonts">
+        <item>Verdana</item>
+        <item>Roland</item>
+        <item>Consolas</item>
+        <item>Calibri</item>
+
+    </string-array>
+</resources>

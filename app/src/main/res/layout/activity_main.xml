@@ -1,0 +1,77 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/create_order"
+            android:layout_width="280dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFC107"
+            android:text="@string/create_order_buttonText"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/font_size" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_size"
+            android:text="Список заказов:" />
+
+        <ListView
+            android:id="@+id/ordersList"
+            android:background="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="5dp" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clearOrderList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:layout_marginRight="2.5dp"
+                android:backgroundTint="#FFC107"
+                android:text="@string/clearOrders"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/my_orders"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#FFC107"
+                android:layout_marginLeft="2.5dp"
+                android:text="@string/refreshOrders"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/font_size" />
+        </LinearLayout>
+    </LinearLayout>/>
+</RelativeLayout>

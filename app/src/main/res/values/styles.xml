@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+       <item name="colorPrimary">@color/Orange</item>
+       <item name="colorPrimaryDark">#D5A412</item>
+       <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ===Стиль для actionbar=== -->
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#FFC107</item>
+        <item name="android:titleTextStyle">@style/TextColor</item>
+    </style>
+
+    <style name="TextColor" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12dp</item>>
+    </style>
+    <!-- ======================== -->
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="TextViewIngr">
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

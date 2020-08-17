@@ -1,0 +1,436 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/spinner2"
+    android:orientation="vertical"
+    android:layout_marginBottom="55dp"
+    android:id="@+id/pizzaLayoutMain"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/pizzaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Размер:"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_size" />
+
+        <RadioGroup
+            android:id="@+id/radioGr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:checkedButton="@id/radioButton25"
+            android:orientation="horizontal"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <RadioButton
+                android:id="@+id/radioButton25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#FFC107"
+                android:gravity="fill_vertical"
+                android:text="@string/_25" />
+
+            <RadioButton
+                android:id="@+id/radioButton35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#FFC107"
+                android:text="@string/_35" />
+
+            <RadioButton
+                android:id="@+id/radioButton45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#FFC107"
+                android:text="@string/_45" />
+        </RadioGroup>
+
+        <ScrollView
+            android:id="@+id/scrollIngr"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/ingredientsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sauce"
+                         />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/TextViewIngr"
+                        android:text="Соус" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxSauce"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl"
+                        android:textCursorDrawable="@color/Orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/salami"/>
+ />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/TextViewIngr"
+                        android:text="Салями" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxSausage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl"
+                        android:textCursorDrawable="@color/Orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pipperony" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/TextViewIngr"
+                        android:text="Пепперони" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxPipperony"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl"
+                        android:textCursorDrawable="@color/Orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ham" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/TextViewIngr"
+                        android:text="Ветчина" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxHam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl"
+                        android:textCursorDrawable="@color/Orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/chicken" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        style="@style/TextViewIngr"
+                        android:text="Куриное феле" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxChicken"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl"
+                        android:textCursorDrawable="@color/Orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/onion" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        style="@style/TextViewIngr"
+                        android:text="Лук" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxOnion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl"
+                        android:textCursorDrawable="@color/Orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pepper" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        style="@style/TextViewIngr"
+                        android:text="Болгарский перец" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxPepper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl"
+                        android:textCursorDrawable="@color/Orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cheese" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/TextViewIngr"
+                        android:text="Пармезан" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxCheese"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl"
+                        android:textCursorDrawable="@color/Orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mozzerella" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/TextViewIngr"
+                        android:text="Моцарелла" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxMozzarella"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl"
+                        android:textCursorDrawable="@color/Orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mushrooms" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        style="@style/TextViewIngr"
+                        android:text="Грибы" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxMushrooms"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/olive" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        style="@style/TextViewIngr"
+                        android:text="Оливки" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxOlive"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/greens" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        style="@style/TextViewIngr"
+                        android:text="Зелень" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxGreens"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#FF9800"
+                        android:layoutDirection="rtl"
+                        android:textCursorDrawable="@color/Orange" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <!--Меню ингридиентов для пиццы-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prodCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="@string/num_of_item"
+            android:textColor="#000000"
+            android:textSize="@dimen/font_size" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:entries="@array/num"
+            android:textAlignment="textEnd" />
+
+    </LinearLayout>
+</LinearLayout>
